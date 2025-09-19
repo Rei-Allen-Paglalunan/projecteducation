@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrelunan University - Information Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            color: rgb(255, 255, 255);
+            padding: 32px 0 16px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1E90FF;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+            margin: 32px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            padding: 24px 32px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        h2.mission { color: #32CD32; }
+        h2#upcoming-events {
+            color: #FFA07A;
+            background-color: #FFFFE0;
+        }
+        h2.contact { color: #20B2AA; }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            background-color: #AFEEEE;
+            margin-bottom: 10px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #B0E0E6;
+        }
+
+        .section {
+            background: #f8f3f3;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #1E90FF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #32CD32;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 18px 0;
+            background: #f0f8ff;
+            color: #888;
+            margin-top: 40px;
+            font-size: 0.95rem;
+            border-top: 1px solid #e0eafc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Padrelunan University</h1>
+    </header>
+    <main>
+        <section>
+            <h2 class="mission">Mission Statement</h2>
+            <p>Our mission is to nurture lifelong learners who are compassionate, responsible, and ready to thrive in a global society.</p>
+        </section>
+        <section>
+            <h2 id="upcoming-events">Upcoming Events</h2>
+            <ul>
+                <li data-event-type="indoor" title="Event Type: Indoor">
+                    Science Fair <span style="font-weight: bold; color: red;">June 10</span>
+                </li>
+                <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+                    Art Exhibition <span style="font-weight: bold; color: red;">June 15</span>
+                </li>
+                <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+                    Sports Day <span style="font-weight: bold; color: red;">June 20</span>
+                </li>
+                <li data-event-type="indoor" title="Event Type: Indoor">
+                    Esports Tournament <span style="font-weight: bold; color: red;">July 5</span>
+                </li>
+                <li data-event-type="indoor" title="Event Type: Indoor">
+                    Buwan ng Wika Celebration <span style="font-weight: bold; color: red;">August 20</span>
+                </li>
+                <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+                    Custom Christmas Event <span style="font-weight: bold; color: red;">December 18</span>
+                </li>
+                <li data-event-type="indoor" title="Event Type: Indoor">
+                    New Year Celebration <span style="font-weight: bold; color: red;">January 1</span>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="contact">Contact Us</h2>
+            <div class="section">
+                <p>Email: <a href="mailto:info@padrelunanuniversity.edu" title="Click to copy email">info@padrelunanuniversity.edu</a></p>
+                <p>Phone: <a href="tel:+01234567890" title="Click to copy phone number">+01 234 567 890</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Padrelunan University. All rights reserved.
+    </footer>
+</body>
+</html>
